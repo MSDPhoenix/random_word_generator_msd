@@ -1,0 +1,35 @@
+* {
+    margin:0px;
+    padding:0px;
+    border:0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color:darkslategray;
+    color:blue;
+}
+#wrapper {
+    width: 500px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: lightslategray;
+    text-align: center;
+    box-shadow: 10px 10px 10px grey;
+}
+p {
+    padding:15px;
+}
+#wrapper div {
+    background-color: yellow;
+    padding:20px;
+    border: 5px inset darkgoldenrod;
+    display: inline-block;
+    width:70%;
+}
+.button {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: outset darkgoldenrod  2px;
+    text-decoration: none;
+}

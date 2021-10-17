@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Word Generator</title>
+    {% load static %}		<!-- added this line -->
+    <link rel="stylesheet" href="{% static 'css/style1.css' %}">    
+    <!-- <script src="{% static 'js/script.js' %}"></script> -->
+</head>
+<body>
+    <div id="wrapper">
+        <p>Random Word (attempt #{{request.session.attempt_number}})</p>
+        <div>
+            {{request.session.random_word}}
+        </div>
+        <br>
+        <a class="button" href="/generate">Generate</a>
+        </button>
+        <br>
+        <a class="button" href="/reset">Reset</a>
+        </button>
+    </div>
+</body>
+</html>
